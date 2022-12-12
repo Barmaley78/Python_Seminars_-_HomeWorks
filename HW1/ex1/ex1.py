@@ -7,7 +7,7 @@
 
 daynumber = int(input('введите номер дня '))
 daynumber = abs(daynumber) % 7
-if daynumber in range(1, 5):
-    print(daynumber,end=' нет')
+if daynumber in range(1, 6):
+    print('нет')
 else:
-    print(daynumber,end=' да')
+    print('да')
