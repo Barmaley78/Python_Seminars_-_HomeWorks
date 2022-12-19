@@ -11,3 +11,10 @@ if daynumber in range(1, 6):
     print('нет')
 else:
     print('да')
+
+exit()
+d = int(input("Введите день недели: "))
+if (1 <= d <= 5):
+    print("Нет")
+if (6 <= d <=7):
+    print("Да")
