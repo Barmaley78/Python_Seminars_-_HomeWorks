@@ -24,3 +24,25 @@ list.append(1)
 for i in range(1, n):
     list.append(list[i-1] * i+1)
 print(list)
+
+num = int(input("Введите число : "))
+a = 1
+for i in range(1, num + 1):
+    a *= i
+    print(a, end=" ")
+print()
+
+#Вычисление факториала с помощью хвостовой рекурсии
+def Factorials(n, result = 1):
+    if(n<1):
+        return result;
+    return Factorials(n-1, n*result);
+
+n = int(input('Введите целое число: '));
+
+listFactorials = [];
+
+for i in range(1, n+1):
+    listFactorials.append(Factorials(i));
+
+print(listFactorials);

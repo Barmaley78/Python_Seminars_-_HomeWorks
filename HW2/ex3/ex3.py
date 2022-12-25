@@ -8,6 +8,9 @@ def f(k):
 
 n = int(input('введите натуральное число '))
 list = []
+sum = 0
 for i in range(n):
     list.append(round(f(i+1),2))
+    sum += list[i]
 print(list)
+print(sum)

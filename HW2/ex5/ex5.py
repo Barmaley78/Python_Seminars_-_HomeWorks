@@ -8,3 +8,11 @@ for i in range(len(list)):
     list.pop(i)
     list.insert(random.randint(0,9),t)
 print(list)
+
+exit()
+# в питоне обмен переменных можно производить так
+a,b = b,a
+
+print(list)
+shuffle(list)
+print(list)
