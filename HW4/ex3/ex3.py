@@ -21,3 +21,6 @@ ua = set(list)
 for i in ua:
     ualist.append(i)
 print(ualist)
+
+a = [1,2,2,2,2,3,1,4]
+print(set(a))

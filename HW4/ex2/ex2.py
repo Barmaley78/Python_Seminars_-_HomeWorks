@@ -9,4 +9,21 @@ for i in range(2,n):
             k = True
             break
     if n % i == 0 and k == False:
-        print(i,end=" ")
+        list.append(i)
+print(list)
+
+# от Сергея
+
+exit()
+n = int(input("Введите число N: "))
+i = 2 
+list = []
+
+while i <= n:
+    if n % i == 0:
+        list.append(i)
+        n //= i
+        i = 2
+    else:
+        i += 1
+print(f"Простые множители введенного числа указаны в списке: {list}")

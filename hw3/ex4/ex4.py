@@ -10,3 +10,6 @@ while a != 0:
     s = str(a % 2) + s
     a = a // 2
 print(s)
+
+# num10 = 45
+# print(f'Двоичное число через функцию bin: {bin(num10)}')

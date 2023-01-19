@@ -16,3 +16,10 @@ for i in range(a):
 print(list)
 print(reslist)
 
+# l = [2, 3, 4, 5, 6]
+# l2 = []
+# i = 0
+# while (i <= len(l)-1-i):
+#     l2.append(l[i] * l[len(l)-1-i])
+#     i += 1
+# print(l2)

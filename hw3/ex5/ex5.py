@@ -20,3 +20,32 @@ list = []
 for i in range(-a, a+1):
     list.append(fib(i))
 print(list)
+
+
+exit()
+def lst_fibonacci_num():
+    num = int(input('Введите любое натуральное число: '))
+    fib = []
+    a, b = 1, 1
+    for i in range(num):
+        fib.append(a)
+        a, b = b, a + b
+    a, b = 0, 1
+    for j in range(num + 1):
+        fib.insert(0, a)
+        a, b = b, a - b
+    print(f'Список чисел Фибоначчи для {num}: {fib}')
+lst_fibonacci_num()
+
+
+def fullFibonacci(n):
+    fibonacci = [0]
+    if n == 0:
+        return fibonacci
+    elif n == 1:
+        fibonacci.append(1)
+    elif n > 1:
+        fibonacci = fullFibonacci(n - 1)
+        fibonacci.append(fullFibonacci(n - 1)[-1] + fullFibonacci(n - 2)[-1])
+    fibonacci.insert(0, fibonacci[-1] * ((-1) ** (n + 1)))
+    return fibonacci
