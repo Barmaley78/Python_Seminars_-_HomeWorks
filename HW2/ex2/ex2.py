@@ -22,7 +22,7 @@ n = int(input('введите натуральное число '))
 list = []
 list.append(1)
 for i in range(1, n):
-    list.append(list[i-1] * i+1)
+    list.append(list[i-1] * (i+1))
 print(list)
 
 num = int(input("Введите число : "))
