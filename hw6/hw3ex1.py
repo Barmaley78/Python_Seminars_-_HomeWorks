@@ -11,5 +11,6 @@ print(sum(lst))
 
 exit()
 # для подсчета суммы нечетных элементов
+
 lst = [4, 6, 8, 2, 4, 3, 5, 7, 0]
 print(sum(list(filter(lambda x: x%2, lst))))
